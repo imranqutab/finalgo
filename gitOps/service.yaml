@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-finalgo
+spec:
+  selector:
+    app: app-finalgo
+  ports:
+  - port: 6500
+    protocol: TCP
+    targetPort: 6500

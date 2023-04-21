@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-finalgo
+  
+spec:
+  selector:
+    matchLabels:
+      app: app-finalgo
+
+  firebaselicas: 1
+  template:
+    metadata:
+      labels:
+        app: app-finalgo
+
+    spec:
+      containers:
+        - name: app
+          image: ghcr.io/imranqutab/go-app:latest
+          ports:
+            - containerPort: 6500
+# appname: app-finalgo

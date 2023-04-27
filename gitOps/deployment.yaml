@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: ghcr.io/imranqutab/go-app:main-19c908b
+          image: ghcr.io/imranqutab/go-app:main-b92c61f
           ports:
             - containerPort: 6500
 # appname: app-finalgo

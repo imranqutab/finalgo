@@ -20,4 +20,7 @@ spec:
           image: ghcr.io/imranqutab/go-app:main-a40d3c5
           ports:
             - containerPort: 6500
+            
+      imagePullSecrets:
+      - name: dockerconfigjson-github-com
 # appname: app-finalgo
